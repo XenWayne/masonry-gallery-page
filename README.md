@@ -5,7 +5,6 @@ The main masonry view is modified based on [Fabio Ottaviani](https://codepen.io/
 
 Third-party libraries: 
 
-- [jQuery](https://jquery.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Masonry](https://masonry.desandro.com/)
 - [Fancybox](http://fancyapps.com/fancybox/3/)
