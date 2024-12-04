@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -137,11 +139,6 @@ Bootstrap Custom
       color: #b0b0b0
     }
 
-    .container {
-      background-color: transparent;
-      padding-top: 0 !important;
-    }
-
     body {
       background-color: transparent !important;
     }
@@ -153,6 +150,7 @@ Category Text
       color: #888;
       font-size: 0.9em;
       margin-top: 0;
+      padding: 0px 7dvw;
     }
 
     .category-text a {
@@ -181,8 +179,8 @@ Loading Blur-up
 
 <body>
   <div class="fixed-tabs">
-    <div class="container">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <div class="container-fluid">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="category1-tab" data-bs-toggle="tab" href="#category1" role="tab"
             aria-controls="category1" aria-selected="true">Category 1</a>
@@ -200,17 +198,21 @@ Loading Blur-up
   </div>
 
   <!-- !MAIN START -->
-  <div class="container mt-5 pt-5">
+  <div class="container-fluid mt-5">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="category1" role="tabpanel" aria-labelledby="category1-tab">
 
-        <div class="category-text">
-          我是文字啊啦啦啦啦啦嘿嘿嘿嘿额和黑恶黑hiLorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam enim accusamus
-          accusantium veritatis consequuntur doloribus repellat quos voluptas repellendus architecto! Quos natus
-          corrupti ut autem saepe quisquam est labore possimus.
-        </div>
+
 
         <div class="crazy-grid">
+
+          <!--Category 1 text-->
+          <div class="crazy-grid__box category-text">
+            <p>Repository: <a href="https://github.com/XenWayne/masonry-gallery-page">XenWayne/masonry-gallery-page</a> | For demo only</p>
+            <p>这是一个简单的测试页面，用于展示Masonry瀑布流布局的效果。页面中的图片均为示例图片，来源于网络。</p>
+
+          </div>
+
           <!-- Category 1 内容 -->
           <div class="crazy-grid__box">
             <a href="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp" data-fancybox="category1">
@@ -232,11 +234,14 @@ Loading Blur-up
       </div>
 
       <div class="tab-pane fade" id="category2" role="tabpanel" aria-labelledby="category2-tab">
-        <div class="category-text">
-          This is a easy test | <a href="https://www.baidu.com">@Test</a>
-        </div>
-
         <div class="crazy-grid">
+
+          <!--Category 2 text-->
+          <div class="crazy-grid__box category-text">
+            <h2> Category 2 </h2>
+            This is a easy test | <a href="https://www.baidu.com">@Test</a>
+          </div>
+          
           <!-- Category 2 内容 -->
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
@@ -274,14 +279,19 @@ Loading Blur-up
       </div>
 
       <div class="tab-pane fade" id="category3" role="tabpanel" aria-labelledby="category3-tab">
-        <div class="category-text">
-          我是文字啊啦啦啦啦啦嘿嘿嘿嘿额和黑恶黑Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni deserunt optio quam
-          voluptatibus cum quasi, amet iste beatae reprehenderit odio, delectus est tempore. Beat撒旦234法发</br>的萨45芬给e
-          dignissimos assumenda laboriosam explicabo asperiores.
-          我是超链接啊哈哈<a href="https://www.baidu.com">呜呼呜呼</a>啊手动阀手动阀
-        </div>
+
 
         <div class="crazy-grid">
+
+          <!--Category 3 text-->
+          <div class="crazy-grid__box category-text">
+            <h2> Category 3 </h2>
+            我是文字啊啦啦啦啦啦嘿嘿嘿嘿额和黑恶黑Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni deserunt optio quam
+            voluptatibus cum quasi, amet iste beatae reprehenderit odio, delectus est tempore. Beat撒旦234法发</br>的萨45芬给e
+            dignissimos assumenda laboriosam explicabo asperiores.
+            我是超链接啊哈哈<a href="https://www.baidu.com">呜呼呜呼</a>啊手动阀手动阀
+          </div>
+
           <!-- Category 3 内容 -->
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category3">
@@ -299,7 +309,7 @@ Loading Blur-up
                 <img data-src="https://s21.ax1x.com/2020/02/08/1RsBEd.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
-            <a href="https://s21.ax1x.com/2020/02/08/QxRZaF.jpg" data-fancybox="category3">
+            <a href="https://s21.ax1x.com/2019/12/22/QxRZaF.jpg" data-fancybox="category3">
               <figure>
                 <img data-src="https://s21.ax1x.com/2019/12/22/QxRZaF.jpg" class="lazyload img-fluid blur-up">
               </figure>
