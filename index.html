@@ -53,6 +53,11 @@ Crazy Grid
       /* 为了避免内容被固定的Tab遮挡 */
     }
 
+    /* 组图同一竖排上下些许空隙 */
+    .crazy-grid__box figure {
+      margin-top: 10px;
+    }
+
     .crazy-grid__box {
       float: left;
       width: 50%;
@@ -113,8 +118,8 @@ Crazy Grid
     }
 
     .crazy-grid__box img {
-      -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);
     }
 
     .crazy-grid__box .title {
@@ -250,7 +255,7 @@ Loading Blur-up
               </figure>
             </a>
             <div class="title">
-              <span class="desc">Beautiful apartment in Rome</span>
+              <span class="desc"></span> <!--无字demo-->
             </div>
           </div>
 
