@@ -163,39 +163,17 @@ Category Text
     }
 
     /*------------------------------
-Loading Overlay
+Loading Blur-up
 ------------------------------*/
-    .loading-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #f0f1f1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.5s ease;
+    .blur-up {
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      transition: filter 800ms, -webkit-filter 800ms;
     }
 
-    .loading-overlay::before {
-      content: '';
-      width: 40px;
-      height: 40px;
-      border: 2px solid #fff;
-      border-top: 2px solid #000;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
+    .blur-up.lazyloaded {
+      -webkit-filter: blur(0);
+      filter: blur(0);
     }
   </style>
 </head>
@@ -236,9 +214,8 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp" data-fancybox="category1">
               <figure>
-                <div class="loading-overlay"></div>
                 <img data-src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp"
-                  class="lazyload img-fluid">
+                  class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -263,20 +240,18 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
               <span class="desc">Beautiful apartment in Rome</span>
             </div>
-
           </div>
+
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/01/28/1Kd1PK.jpg" data-fancybox="category2">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/01/28/1Kd1PK.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/01/28/1Kd1PK.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -286,8 +261,7 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" data-fancybox="category2">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -311,26 +285,22 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <a href="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2019/12/28/leCoa8.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <a href="https://s21.ax1x.com/2020/02/08/1RsBEd.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/02/08/1RsBEd.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsBEd.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <a href="https://s21.ax1x.com/2020/02/08/QxRZaF.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2019/12/22/QxRZaF.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2019/12/22/QxRZaF.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -340,8 +310,7 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -352,8 +321,7 @@ Loading Overlay
           <div class="crazy-grid__box">
             <a href="https://s21.ax1x.com/2020/03/06/3LobCj.jpg" data-fancybox="category3">
               <figure>
-                <div class="loading-overlay"></div>
-                <img data-src="https://s21.ax1x.com/2020/03/06/3LobCj.jpg" class="lazyload img-fluid">
+                <img data-src="https://s21.ax1x.com/2020/03/06/3LobCj.jpg" class="lazyload img-fluid blur-up">
               </figure>
             </a>
             <div class="title">
@@ -361,6 +329,139 @@ Loading Overlay
             </div>
           </div>
           <!-- 其他内容 -->
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" data-fancybox="category2">
+              <figure>
+                <img data-src="https://s21.ax1x.com/2020/02/08/1RsSc8.jpg" class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">Beautiful apartment in Rome</span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp" data-fancybox="category1">
+              <figure>
+                <img data-src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp"
+                  class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">
+                <p><b>Penthouse</b> | up the sky a City Life</p>
+                <p>段落测试</p>
+              </span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp" data-fancybox="category1">
+              <figure>
+                <img data-src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp"
+                  class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">
+                <p><b>Penthouse</b> | up the sky a City Life</p>
+                <p>段落测试</p>
+              </span>
+            </div>
+          </div>
+          <div class="crazy-grid__box">
+            <a href="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp" data-fancybox="category1">
+              <figure>
+                <img data-src="https://gcore.jsdelivr.net/gh/XenWayne/sitefile/img/header_gray.webp"
+                  class="lazyload img-fluid blur-up">
+              </figure>
+            </a>
+            <div class="title">
+              <span class="desc">
+                <p><b>Penthouse</b> | up the sky a City Life</p>
+                <p>段落测试</p>
+              </span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -372,13 +473,25 @@ Loading Overlay
   <script src="https://gcore.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
   <script src="https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script>
   <script>
-    // 初始化Masonry
+    // 监听DOM加载完成事件
     document.addEventListener('DOMContentLoaded', function () {
+      // 初始化Masonry
       document.querySelectorAll('.tab-pane').forEach(function (pane) {
         var grid = pane.querySelector('.crazy-grid');
         var msnry = new Masonry(grid, {
           itemSelector: '.crazy-grid__box',
           percentPosition: true
+        });
+
+        // 慢网场景优化，超过一定时间后触发一次layout
+        var timeoutDOM = setTimeout(function () {
+          msnry.layout();
+        }, 5000);
+
+        // 监听懒加载图片加载完成事件
+        grid.addEventListener('lazyloaded', function () {
+          clearTimeout(timeoutDOM); // 清除定时器
+          msnry.layout();
         });
 
         // 监听切换Tab事件
@@ -391,14 +504,14 @@ Loading Overlay
               percentPosition: true
             });
 
+            // 慢网场景优化，超过一定时间后触发一次layout
+            var timeoutTabSwitch = setTimeout(function () {
+              msnry.layout();
+            }, 5000);
+
             // 监听懒加载图片加载完成事件
-            grid.addEventListener('lazyloaded', function (event) {
-              var img = event.target;
-              var overlay = img.previousElementSibling;
-              overlay.style.opacity = '0';
-              setTimeout(function () {
-                overlay.remove();
-              }, 500); // 等待transition完成后移除overlay
+            grid.addEventListener('lazyloaded', function () {
+              clearTimeout(timeoutTabSwitch); // 清除定时器
               msnry.layout();
             });
 
@@ -417,6 +530,7 @@ Loading Overlay
           }
         }
       });
+    });
   </script>
 </body>
 
